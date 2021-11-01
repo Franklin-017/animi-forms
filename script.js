@@ -6,6 +6,9 @@ function validateData(event) {
   if ((/[^\w\*]/g.test(name))) {
     errmsg.innerHTML = "Special Characters are not allowed";
     return false;
+  } else if(name.length === 0){
+    errmsg.innerHTML = "Name should not be empty";
+    return false;
   } else if(name.length < 8) {
     errmsg.innerHTML = "Name should have minimum 8 character";
     return false;
