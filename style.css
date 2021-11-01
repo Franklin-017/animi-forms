@@ -93,6 +93,12 @@
   cursor: pointer;
 }
 
+#errormsg {
+  margin-top: 15px;
+  display: block;
+  color: #d14200;
+}
+
 
 /* remove up and down arrow in input type=number */
 input::-webkit-outer-spin-button,

@@ -16,7 +16,8 @@
       <div class="inputSection">
         <div class="inputForm">
           <span class="inputRepresentation">ANIMI-Name</span>
-          <input class="input" type="text" name="animi-name" />
+          <input class="input" type="text" name="animi-name" oninput="validateData(event)" />
+          <span id="errormsg"></span>
         </div>
         <div class="inputForm">
           <span class="inputRepresentation">ANIMI-(ORIGIN-COUNTRY)</span>

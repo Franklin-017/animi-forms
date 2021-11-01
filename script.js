@@ -1,18 +1,19 @@
 function validateData(event) {
   event.preventDefault();
   let name = document.forms["animiForm"]["animi-name"].value;
+  let errmsg = document.getElementById('errormsg');
   
   if ((/[^\w\*]/g.test(name))) {
-    alert("Validate Failed")
+    errmsg.innerHTML = "Special Characters are not allowed";
     return false;
   } else if(name.length < 8) {
-    alert("Validate Failed")
+    errmsg.innerHTML = "Name should have minimum 8 character";
     return false;
   } else if(name.length > 15) {
-    alert("Validate Failed")
+    errmsg.innerHTML = "Name should have maximum of 15 character only";
     return false;
   }
-  alert("Validate Success")
+  errmsg.innerHTML = "";
   return true;
 }
 
