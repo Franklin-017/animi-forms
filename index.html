@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animi Forms</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1 class="heading">Animi-Forms</h1>
+    </div>
+    <form class="form" name="animiForm" onsubmit="return validateData(event)" autocomplete="off">
+      <div class="inputSection">
+        <div class="inputForm">
+          <span class="inputRepresentation">ANIMI-Name</span>
+          <input class="input" type="text" name="animi-name" />
+        </div>
+        <div class="inputForm">
+          <span class="inputRepresentation">ANIMI-(ORIGIN-COUNTRY)</span>
+          <select class="input selectInput" name="country" id="country">
+            <option value=""></option>
+            <option value="india">INDIA</option>
+          </select>
+        </div>
+        <div class="inputForm">
+          <span class="inputRepresentation">No.of.Episodes</span>      
+          <input class="input" type="number" name="no-of-episode" />
+        </div>
+        <div class="inputForm">
+          <span class="inputRepresentation">YOUR RATING</span>      
+          <input class="input" type="text" name="your-rating" />
+        </div>
+        <div class="inputForm">
+          <span class="inputRepresentation">AWARDS</span>     
+          <input class="input" type="text" name="awards" />
+        </div>
+      </div>
+      <div class="textAreasection">
+        <div class="textareaForm">
+          <span class="inputRepresentation">DESCRIPTION ABOUT THE ANIMI</span>
+          <textarea class="textArea" name="description" id="description" cols="50" rows="7"></textarea>
+        </div>
+        <div class="submitButton">
+          <input class="submitBtn" type="submit" value="SUBMIT">
+        </div>
+      </div>
+    </form>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
